@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <style>
+       
+       p {
+            text-align: justify;
+            font-size: 1.2em;
+            font-weight:lighter;
+        }
+
+        /* Estilos generales para la página */
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6ec;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #e0f7fa; /* Color verde claro */
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #b2dfdb; /* Color verde oscuro al pasar el ratón */
+            color: white;
+        }
+
+         /* Estilo para los botones de hobbies */
+         .hobby-btn {
+            display:inline-block;
+            background-color: #e0f7fa;
+            color: #00796b;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 4px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Sombra alrededor del botón */
+            transition: background-color 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+            
+        }
+        
+        /* Efecto al pasar el ratón por encima */
+        .hobby-btn:hover {
+            background-color: #b2dfdb;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+            color: #004d40;
+        }
+        
+          /* Estilo para centrar los botones */
+          .hobbies-container {
+            text-align: center; /* Centra los elementos en línea dentro del contenedor */
+        }
+
+        /* Contenedor principal para el CV */
+        .container {
+            width: auto;
+            max-height: max-content;
+            margin: 5px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        /* Encabezado con foto y nombre */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 18%; /* Tamaño de la imagen de perfil */
+            border-radius: 50%; /* Hace la imagen redonda */
+            margin-right: 5px;
+        }
+        .header h1 {
+            color: #333; /* Color gris oscuro */
+            margin: 0;
+            font-size: 3em;
+            text-align: center;
+            flex: 1;
+        }
+
+        /* Títulos */
+        h2 {
+            color: #333;
+            font-size: 1.9em;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación con enlaces a otras páginas -->
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <!-- Enlace a la página de contacto -->
+        <a href="contact.html">Contacto</a>
+    </div>
+
+    <!-- Contenedor principal del CV -->
+    <div class="container">
+        <!-- Encabezado con foto de perfil y nombre -->
+        <div class="header">
+            <!-- Imagen de perfil alineada a la izquierda -->
+            <img src="IMG_20221025_125219843.jpg" alt="Foto de perfil">
+            <!-- Nombre centrado a la derecha de la imagen -->
+            <h1>Elena Verduzco Suárez</h1>
+        </div>
+
+        <!-- Breve introduccion personal-->
+        
+        <p> Hola!! Soy estudiante de posgrado en Microbiología Aplicada en el norte de México; me apasiona
+            aprender cosas nuevas por lo que en este momento formo parte del curso de
+            FrontEnd de DEV.F gracias al apoyo del programa Bécalos.</p>
+        <p>Espero aprender mucho de esta introducción al FrontEnd y hacer varios amigos en el camino.</p>
+            
+
+        <!-- Sección de hobbies -->
+        <h2>Hobbies</h2>
+            <div class="hobbies-container">
+                <!-- Cada hobby es un botón centrado que enlaza a una página de ejemplos -->
+                <a href="books.html" class="hobby-btn">Leer libros de fantasía</a>
+                <a href="tattoos.html" class="hobby-btn">Tatuajes</a>
+                <a href="GL.html" class="hobby-btn">GL (series, películas, libros, etc.)</a>
+                <a href="https://open.spotify.com/playlist/37i9dQZF1E8LLAcF2KGvLa?si=fb6uVdVhS5i62E9UzY_puw" class="hobby-btn">Escuchar música techno</a>
+            </div>
+    </div>
+
+</body>
+</html>
